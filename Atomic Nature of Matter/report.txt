@@ -1,0 +1,72 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<35>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 4 >>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Particle Representation)
+      Approach: I defined Blob b ( already given by the instructor), then I defined add by following the directions.
+      I incremented pixels by 1 after adding x and y. I defined mass and returned pixels as suggested by the API.
+      I used euclidean distance formula after I define distance to return the distance between blob b and blob c.
+      Lastly i defined string and returned the value pixel, x and y as a string representation.
+
+      Issues and resolution: this problem was straight forward, I did not face any issues or problem.
+
+   Problem 2 (Particle Identification)
+      Approach: I set blob as an empty list. Created a 2D list called marked, having the same dimensions as pic.
+   then I created a Blob object called blob; called _findBlob() with the appropriate arguments,
+   and then I added blob to blobs if it has a non-zero mass. I defined getBeads, and set a as an empty list.
+   I set b as len of self._blob. Then if mass of the blob is greater than or equal to pixels,
+   I added self._blobs to variable "a". Defined findBlob, I used the base case that was stated in the directions.
+   Marked the pixel (i, j). Marked pixel True if luminance is less than tau. I added the pixel to blob.
+   I Recursively called _findBlob() on the N, E, W, and S pixels.
+
+      Issues and resolution: At first I was doing fine with this problem, but after I got on defining getBead,
+      I got stuck for a while, I did not know what to do, so I went back to the slide show presentation and watched
+      a video about what we did in class, and then I figured it out. The rest of the problem needed some thinking,
+      but I managed to get through it.
+
+   Problem 3 (Particle Tracking)
+      Approach: Accept command-line arguments pixels (int),tau (float), delta (float). For this problem I did not use
+      import math because I found another approach for it. I constructed BlobFinder object from fame sys.argv[4]
+       and got a list of beads named prevBeads.Then I set prevBeads to currBeads. For each bead currBead in currBeads,
+        I found a bead prevBead from prevBeads that is no further than delta and is closest to currBead.
+        I wrote the distance using the formula. Wrote a new line character.
+
+      Issues and resolution: I think I had an easier and simpler approach to this problem.
+       I did not face any issue or problems. I showed my code to the teaching assistance
+       he told me that it would work fine.
+
+   Problem 4 (Data Analysis)
+      Approach: Initialize ETA, RHO, T, and R to appropriate values ( based on the directions and the paragraph).
+      Set displacement to standard input. Calculated the var as the sum of the squares of the n displacements
+      (each converted from pixels to meters) read from standard input(given by the directions). I used both the map and
+      lambda function to create a new list. I then divided var by 2 * n.
+      Used the formula given for Boltzmann and Avogadro's constant.
+      Wrote to standard output the two constants in scientific notation  separated by a space.
+
+
+      Issues and resolution: I did not face any issues or problem.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I am learning a lot while doing these types of projects, even though they are taking a lot of time. I am happy with
+   my results so far in this course. I am trying my hardest to learn and go over the material we studied in class.
+   I am definitely enjoying these projects.
